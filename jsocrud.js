@@ -49,9 +49,6 @@ jsocrud.get = function (object, path, defaultReturnValue) {
         return currentObject;
     }
     catch (e) {
-        if (typeof defaultReturnValue === 'undefined') {
-            throw new Error('No entity exists in the given object at the given path');
-        }
         return defaultReturnValue;
     }
 };
